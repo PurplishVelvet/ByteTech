@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteTech Solutions - Reparación y Armado de PC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <h1>ByteTech <span>Solutions</span></h1>
+    <p>Reparación, mantenimiento y armado de PCs Gamer</p>
+    <a href="#configurador" class="btnconfig">Configurar mi PC</a>
+  </header>
+
+  <section id="servicios" class="section">
+    <h2>Servicios Técnicos</h2>
+    <div class="tabs-botones">
+      <button class="tab-link activo" onclick="mostrarTab('notebooks')">Soporte Notebooks</button>
+      <button class="tab-link" onclick="mostrarTab('escritorio')">Soporte PC Escritorio</button>
+      <button class="tab-link" onclick="mostrarTab('gamer')">Armado Gamer</button>
+    </div>
+
+    <div id="notebooks" class="tab-contenido mostrar">
+      <h3>Soporte Notebooks</h3>
+      <p>Mantenimiento, cambio de pantallas, módulos de reparación, reballing y limpieza para notebooks.</p>
+    </div>
+
+    <div id="escritorio" class="tab-contenido">
+      <h3>Soporte PC Escritorio</h3>
+      <p>Diagnóstico, limpieza química, cambio de componentes y optimización.</p>
+    </div>
+
+    <div id="gamer" class="tab-contenido">
+      <h3>Armado Gamer</h3>
+      <p>Armamos tu PC a medida.</p>
+    </div>
+  </section>
+
+  <section id="configurador" class="section">
+    <h2>Configurador de PC</h2>
+    <p>Respondé estas preguntas y te recomendamos los componentes ideales.</p>
+
+    <div id="wizard-caja">
+
+      <div id="pregunta1" class="pregunta mostrar">
+        <h3>1. ¿Para qué vas a usar la PC?</h3>
+        <button onclick="guardarUso('Oficina')">Oficina</button>
+        <button onclick="guardarUso('Gaming')">Gaming</button>
+        <button onclick="guardarUso('Edición')">Edición</button>
+      </div>
+
+      <div id="pregunta2" class="pregunta">
+        <h3>2. ¿Cuál es tu presupuesto?</h3>
+        <button onclick="guardarPresupuesto('Bajo')">Bajo</button>
+        <button onclick="guardarPresupuesto('Medio')">Medio</button>
+        <button onclick="guardarPresupuesto('Alto')">Alto</button>
+      </div>
+
+      <div id="resultado" class="pregunta">
+        <h3>Recomendación</h3>
+        <p id="texto-resultado"></p>
+        <button onclick="reiniciarWizard()">Volver a empezar</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="porque" class="section">
+    <h2>¿Por Qué Elegirnos?</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <h3>Garantía</h3>
+        <p>Todos los trabajos tienen garantía de laboratorio.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Repuestos Originales</h3>
+        <p>Usamos únicamente componentes originales.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Entrega Rápida</h3>
+        <p>Tiempos de entrega cortos y cumplidos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resenas" class="section">
+    <h2>Reseñas e Historial</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <p>"Excelente atención."</p>
+        <strong>- Ricardo Fort</strong>
+        <img src="img/fort_pc.JPG" alt="Ricardo Fort" height="200" width="300">
+      </div>
+      <div class="tarjeta">
+        <p>"Buen servicio."</p>
+        <strong>- Dave Mustaine</strong>
+        <img src="img/dave_pc.jpg" alt="Dave Mustaine" height="200" width="300">
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2>Solicitud de Turno</h2>
+    <form id="form-contacto">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Ej: Juan Pérez">
+      <span class="error" id="error-nombre"></span>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="Ej: juan@mail.com">
+      <span class="error" id="error-email"></span>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="text" id="telefono" placeholder="Ej: 1122334455">
+      <span class="error" id="error-telefono"></span>
+
+      <label for="detalle">Detalle del problema:</label>
+      <textarea id="detalle" placeholder="Contanos qué le pasa a tu equipo"></textarea>
+
+      <button type="submit">Enviar Solicitud</button>
+      <p id="mensaje-exito"></p>
+
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 ByteTech Solutions</p>
+  </footer>
+
+  <button id="btn-arriba" title="Volver arriba">&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

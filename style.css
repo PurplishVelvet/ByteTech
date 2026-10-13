@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #18181c;
+  color: #ffffff;
+}
+
+.hero {
+  background-color: #120e24;
+  text-align: center;
+  padding: 80px 20px;
+  border-bottom: 3px solid #00f0ff;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero h1 span {
+  color: #00f0ff;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.btnconfig {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: #00f0ff;
+  color: #120e24;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.section {
+  padding: 60px 0px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  color: #00f0ff;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #120e24;
+  padding-bottom: 10px;
+}
+
+.tabs-botones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tab-link {
+  background-color: #120e24;
+  color: #ffffff;
+  border: 1px solid #00f0ff;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tab-link.activo {
+  background-color: #00f0ff;
+  color: #120e24;
+  font-weight: bold;
+}
+
+.tab-contenido {
+  display: none;
+  background-color: #120e24;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.tab-contenido.mostrar {
+  display: block;
+}
+
+#wizard-caja {
+  background-color: #120e24;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.pregunta {
+  display: none;
+}
+
+.pregunta.mostrar {
+  display: block;
+}
+
+.pregunta button {
+  margin: 10px 10px 0 0;
+  padding: 10px 18px;
+  background-color: #00f0ff;
+  color: #120e24;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  background-color: #120e24;
+  border: 1px solid #00f0ff;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 220px;
+}
+
+#form-contacto {
+  display: flex;
+  flex-direction: column;
+  background-color: #120e24;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+#form-contacto label {
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+#form-contacto input,
+#form-contacto textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #00f0ff;
+  background-color: #18181c;
+  color: #ffffff;
+}
+
+#form-contacto button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #00f0ff;
+  color: #120e24;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error {
+  color: #ff4d4d;
+  font-size: 13px;
+}
+
+#mensaje-exito {
+  color: #00f0ff;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #120e24;
+}
+
+#btn-arriba {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #00f0ff;
+  color: #120e24;
+  border: none;
+  font-size: 20px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
